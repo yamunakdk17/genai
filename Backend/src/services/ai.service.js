@@ -199,7 +199,7 @@ Return ONLY valid JSON.
 `;
 
   const completion = await ai.chat.completions.create({
-    model: "inclusionai/ling-3.0-flash:free",
+    model: "inclusionai/ling-3.0-flash",
     messages: [
       {
         role: "user",
@@ -267,7 +267,7 @@ Return ONLY valid JSON.
 `;
 
   const response = await ai.chat.completions.create({
-    model: "inclusionai/ling-3.0-flash:free",
+    model: "inclusionai/ling-3.0-flash",
     messages: [
       {
         role: "user",
