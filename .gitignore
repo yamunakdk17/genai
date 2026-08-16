@@ -1,0 +1,52 @@
+# ===========================
+# Dependencies
+# ===========================
+Frontend/node_modules/
+Backend/node_modules/
+
+# ===========================
+# Build files
+# ===========================
+Frontend/dist/
+Frontend/dist-ssr/
+Backend/dist/
+
+# ===========================
+# Environment variables
+# ===========================
+.env
+Frontend/.env
+Backend/.env
+
+# ===========================
+# Logs
+# ===========================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ===========================
+# Editor files
+# ===========================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ===========================
+# OS files
+# ===========================
+*.swp
+*.swo
+
+# ===========================
+# Coverage
+# ===========================
+coverage/
+
+# ===========================
+# Cache
+# ===========================
+.cache/
