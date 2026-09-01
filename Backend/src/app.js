@@ -8,17 +8,26 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 
+// Allowed frontend origins
+const allowedOrigins = [
+    "http://localhost:5173",
+    "https://genai-iota-eight.vercel.app"
+];
+
+// CORS
 app.use(
     cors({
-        origin: "https://project-genai.netlify.app",
-        
+        origin: allowedOrigins,
         credentials: true,
+        methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+        allowedHeaders: ["Content-Type", "Authorization"]
     })
 );
+
+// Test route
 app.get("/", (req, res) => {
     res.send("AI Interview Report Generator Backend is Running 🚀");
 });
-
 
 // Routes
 const authRouter = require("./routes/auth.routes");
