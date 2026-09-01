@@ -11,7 +11,7 @@ app.use(cookieParser());
 // Allowed frontend origins
 const allowedOrigins = [
     "http://localhost:5173",
-    "https://genai-iota-eight.vercel.app"
+    "https://genai-gilt.vercel.app"
 ];
 
 // CORS
